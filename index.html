@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Calculator</title>
+</head>
+<body>
+	<h1>This is an arithmetic calculator!</h1>
+
+	<h3>Enter one number on each box, then press the operation.</h3>
+
+	<input type="number" id="one" name="#one">
+	<input type="number" id="two" name="#two">
+
+	<br>
+	<br>
+
+	<button onclick="Add(parseInt(document.getElementById('one').value),
+		parseInt(document.getElementById('two').value))">+</button>
+
+	<button onclick="Sub(parseInt(document.getElementById('one').value),
+		parseInt(document.getElementById('two').value))">-</button>
+
+	<button onclick="Mul(parseInt(document.getElementById('one').value),
+		parseInt(document.getElementById('two').value))">*</button>
+
+	<button onclick="Div(parseInt(document.getElementById('one').value),
+		parseInt(document.getElementById('two').value))">/</button>
+
+	<button onclick="Mod(parseInt(document.getElementById('one').value),
+		parseInt(document.getElementById('two').value))">%</button>			
+
+	<p id="text">Result will appear here.</p>
+
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
